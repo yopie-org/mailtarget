@@ -4,6 +4,8 @@
   "description": "Headless CLI + MCP server for the Mailtarget Open API (api.mailtarget.co) and Transmission API",
   "type": "module",
   "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/yopie-org/mailtarget.git" },
+  "homepage": "https://docs.mailtarget.co",
   "main": "src/core.mjs",
   "types": "types/index.d.ts",
   "exports": {
