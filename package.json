@@ -1,0 +1,25 @@
+{
+  "name": "mailtarget",
+  "version": "0.1.0",
+  "description": "Headless CLI + MCP server for the Mailtarget Open API (api.mailtarget.co) and Transmission API",
+  "type": "module",
+  "license": "MIT",
+  "main": "src/core.mjs",
+  "types": "types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "default": "./src/core.mjs"
+    }
+  },
+  "bin": { "mailtarget": "src/cli.mjs", "mailtarget-mcp": "src/mcp.mjs" },
+  "files": ["src", "types", "openapi.yaml", "README.md"],
+  "scripts": { "cli": "node src/cli.mjs", "mcp": "node src/mcp.mjs" },
+  "keywords": ["mailtarget", "email", "transactional-email", "mcp", "cli", "openapi"],
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "commander": "^12.1.0",
+    "js-yaml": "^4.1.0"
+  }
+}
